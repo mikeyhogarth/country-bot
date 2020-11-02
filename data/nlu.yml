@@ -1,0 +1,39 @@
+version: "2.0"
+
+nlu:
+  - intent: greet
+    examples: |
+      - hey
+      - hello
+      - hi
+      - hello there
+      - good morning
+      - good evening
+      - moin
+      - hey there
+      - let's go
+      - hey dude
+      - goodmorning
+      - goodevening
+      - good afternoon
+  - intent: goodbye
+    examples: |
+      - good afternoon
+      - cu
+      - good by
+      - cee you later
+      - good night
+      - bye
+      - goodbye
+      - have a nice day
+      - see you around
+      - bye bye
+      - see you later
+  - intent: learn_capital
+    examples: |
+      - What is the capital of [England](country)
+      - What is [Spain](country)'s capital?
+      - Which city is the capital of [France](country)?
+      - Could you tell me the capital city of [Chile](country)?
+      - What is the capital city of [Germany](country)?
+      - Which city is [Portugal](country)'s capital?
