@@ -1,9 +1,15 @@
 version: "2.0"
 
 stories:
-  - story: capital path
+  - story: learn capital from country
     steps:
       - intent: greet
       - action: utter_greet
-      - intent: learn_capital
-      - action: utter_learncapital
+      - intent: learn_capital_from_country
+      - action: utter_learncapitalfromcountry
+  - story: learn country from capital
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: learn_country_from_capital
+      - action: utter_learncountryfromcapital

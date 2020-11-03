@@ -3,13 +3,14 @@ version: "2.0"
 intents:
   - greet
   - goodbye
-  - learn_capital
+  - learn_capital_from_country
+  - learn_country_from_capital
 
 entities:
-  - country
+  - location
 
 slots:
-  country:
+  location:
     type: text
     influence_conversation: false
 
@@ -20,8 +21,11 @@ responses:
   utter_goodbye:
     - text: "Bye"
 
-  utter_learncapital:
-    - text: "Sure, I can tell you the capital of {country}"
+  utter_learncapitalfromcountry:
+    - text: "Sure, I can tell you the capital of {location}."
+
+  utter_learncountryfromcapital:
+    - text: "Sure, I can tell you which country {location} is the capital of."
 
 session_config:
   session_expiration_time: 60

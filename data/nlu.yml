@@ -1,6 +1,16 @@
 version: "2.0"
 
 nlu:
+  - lookup: location
+    examples: |
+      - Afghanistan
+      - Albania
+      - England
+      - France
+      - Netherlands
+      - Zambia
+      - Zimbabwe
+
   - intent: greet
     examples: |
       - hey
@@ -29,11 +39,20 @@ nlu:
       - see you around
       - bye bye
       - see you later
-  - intent: learn_capital
+  - intent: learn_capital_from_country
     examples: |
-      - What is the capital of [England](country)
-      - What is [Spain](country)'s capital?
-      - Which city is the capital of [France](country)?
-      - Could you tell me the capital city of [Chile](country)?
-      - What is the capital city of [Germany](country)?
-      - Which city is [Portugal](country)'s capital?
+      - What is the capital of [England](location)
+      - What is [Spain](location)'s capital?
+      - Which city is the capital of [France](location)?
+      - Could you tell me the capital city of [Chile](location)?
+      - What is the capital city of [Germany](location)?
+      - Which city is [Portugal](location)'s capital?
+  - intent: learn_country_from_capital
+    examples: |
+      - Which country is [London](location) the capital of?
+      - What country has [Paris](location) as its capital?
+      - Do you know the country which calls [Dublin](location) its capital?
+      - [Barcelona](location) is the capital of which country?
+      - Could you tell me which country has the capital city of [Amsterdam](location)?
+      - Which country is [London](location) the capital city of?
+      - Which country has [Amsterdam](location) as its capital?
