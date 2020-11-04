@@ -7,9 +7,11 @@ nlu:
       - Albania
       - England
       - France
+      - Kuala Lumpur
       - Netherlands
       - Zambia
       - Zimbabwe
+      - Buenos Aires
 
   - intent: greet
     examples: |
@@ -19,7 +21,6 @@ nlu:
       - hello there
       - good morning
       - good evening
-      - moin
       - hey there
       - let's go
       - hey dude
@@ -49,10 +50,19 @@ nlu:
       - Which city is [Portugal](location)'s capital?
   - intent: learn_country_from_capital
     examples: |
-      - Which country is [London](location) the capital of?
+      - Which country is [Buenos Aires](location) the capital of?
       - What country has [Paris](location) as its capital?
       - Do you know the country which calls [Dublin](location) its capital?
-      - [Barcelona](location) is the capital of which country?
+      - [Kuala Lumpur](location) is the capital of which country?
       - Could you tell me which country has the capital city of [Amsterdam](location)?
       - Which country is [London](location) the capital city of?
       - Which country has [Amsterdam](location) as its capital?
+  - intent: learn_population_from_country
+    examples: |
+      - How many people live in [England](location)?
+      - What is the population of [France](location)?
+      - Roughly what is the head-count in [Zimbabwe](location)?
+      - How densely populated is [Spain](location)?
+      - What number of people live in [Portugal](location)?
+      - What's the population of [Germany](location)?
+      - What is the current population of [Brazil](location)?

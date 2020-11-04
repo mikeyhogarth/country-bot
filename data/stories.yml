@@ -13,3 +13,9 @@ stories:
       - action: utter_greet
       - intent: learn_country_from_capital
       - action: utter_learncountryfromcapital
+  - story: learn population from country
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: learn_population_from_country
+      - action: utter_learnpopulationfromcountry

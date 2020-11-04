@@ -5,6 +5,7 @@ intents:
   - goodbye
   - learn_capital_from_country
   - learn_country_from_capital
+  - learn_population_from_country
 
 entities:
   - location
@@ -26,6 +27,9 @@ responses:
 
   utter_learncountryfromcapital:
     - text: "Sure, I can tell you which country {location} is the capital of."
+
+  utter_learnpopulationfromcountry:
+    - text: "Sure, I can tell you the population of {location}."
 
 session_config:
   session_expiration_time: 60
