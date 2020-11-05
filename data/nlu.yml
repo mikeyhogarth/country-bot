@@ -27,6 +27,7 @@ nlu:
       - goodmorning
       - goodevening
       - good afternoon
+
   - intent: goodbye
     examples: |
       - good afternoon
@@ -40,6 +41,7 @@ nlu:
       - see you around
       - bye bye
       - see you later
+
   - intent: learn_capital_from_country
     examples: |
       - What is the capital of [England](location)
@@ -48,6 +50,7 @@ nlu:
       - Could you tell me the capital city of [Chile](location)?
       - What is the capital city of [Germany](location)?
       - Which city is [Portugal](location)'s capital?
+
   - intent: learn_country_from_capital
     examples: |
       - Which country is [Buenos Aires](location) the capital of?
@@ -66,3 +69,13 @@ nlu:
       - What number of people live in [Portugal](location)?
       - What's the population of [Germany](location)?
       - What is the current population of [Brazil](location)?
+
+  - intent: learn_regions_from_country
+    examples: |
+      - What are the regions of [Germany](location)?
+      - What are the districts of [France](location)?
+      - Can you name the 27 governorates of [Egypt](location)?
+      - What are the 26 cantons in [Switzerland](location)?
+      - Can you list the regions of [England](location)?
+      - What are the subregions of [Spain](location)?
+      - Can you name the parishes of [Jamaica](location)?

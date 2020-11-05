@@ -31,6 +31,9 @@ responses:
   utter_learnpopulationfromcountry:
     - text: "Sure, I can tell you the population of {location}."
 
+  utter_learnregionsfromcountry:
+    - text: "Sure, I can tell you the regions of {location}."
+
 session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true
