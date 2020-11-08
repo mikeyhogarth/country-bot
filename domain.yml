@@ -1,39 +1,26 @@
-version: "2.0"
-
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
 intents:
-  - greet
-  - goodbye
-  - learn_capital_from_country
-  - learn_country_from_capital
-  - learn_population_from_country
-
+- greet
+- goodbye
+- learn_capital_from_country
+- learn_country_from_capital
+- learn_population_from_country
+- learn_regions_from_country
 entities:
-  - location
-
+- location
 slots:
   location:
     type: text
     influence_conversation: false
-
 responses:
   utter_greet:
-    - text: "Hey! How are you?"
-
+  - text: Hey! How are you?
   utter_goodbye:
-    - text: "Bye"
-
-  utter_learncapitalfromcountry:
-    - text: "Sure, I can tell you the capital of {location}."
-
-  utter_learncountryfromcapital:
-    - text: "Sure, I can tell you which country {location} is the capital of."
-
-  utter_learnpopulationfromcountry:
-    - text: "Sure, I can tell you the population of {location}."
-
+  - text: Bye
   utter_learnregionsfromcountry:
-    - text: "Sure, I can tell you the regions of {location}."
-
-session_config:
-  session_expiration_time: 60
-  carry_over_slots_to_new_session: true
+  - text: Sorry, I do not know how to tell you the regions of {location} - maybe ask
+      mummy or daddy to google it for you?
+actions:
+- action_get_country_details

@@ -1,5 +1,4 @@
-  
-venv3/
+.venv/
 travis_gcloud_auth.json
 docker-compose.override.yml
 .DS_Store

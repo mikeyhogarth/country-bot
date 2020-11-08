@@ -9,19 +9,19 @@ stories:
   - story: learn capital from country
     steps:
       - intent: learn_capital_from_country
-      - action: utter_learncapitalfromcountry
+      - action: action_get_country_details
 
   - story: learn country from capital
     steps:
       - intent: learn_country_from_capital
-      - action: utter_learncountryfromcapital
+      - action: action_get_country_details
 
   - story: learn population from country
     steps:
       - intent: learn_population_from_country
-      - action: utter_learnpopulationfromcountry
+      - action: action_get_country_details
 
   - story: learn regions from country
     steps:
       - intent: learn_regions_from_country
-      - action: utter_learnregionsfromcountry
+      - action: action_get_country_details

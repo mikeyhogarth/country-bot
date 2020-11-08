@@ -8,6 +8,7 @@ nlu:
       - England
       - France
       - Kuala Lumpur
+      - New Zealand
       - Netherlands
       - Zambia
       - Zimbabwe
@@ -50,6 +51,7 @@ nlu:
       - Could you tell me the capital city of [Chile](location)?
       - What is the capital city of [Germany](location)?
       - Which city is [Portugal](location)'s capital?
+      - What is the capital of [New Zealand](location)?
 
   - intent: learn_country_from_capital
     examples: |
